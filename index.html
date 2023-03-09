@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://kit.fontawesome.com/d10f5f87f4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/css/coreui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/dataTables.bootstrap5.min.css">
+    <style>
+        .dataTable th{ white-space: nowrap; }
+        .white-space-nowrap{ white-space: nowrap; }
+    </style>
+</head>
+<body>
+    <div class="container mb-5 pb-5 mt-5">
+        <div class="text-center">
+            <h2>Ownership sheets Date</h2>
+        </div>
+
+        <div class="table-response overflow-auto px-3" >
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Security Name</th>
+                        <th scope="col">Shares Held</th>
+                        <th scope="col">Shares Outstardim </th>
+                        <th scope="col">Ownership</th>
+                        <th scope="col">5% indicator</th>
+                        <th scope="col">Jurisdiction</th>
+                        <th scope="col">Action Item</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">South African Gold Corp</th>
+                        <td>20</td>
+                        <td>500</td>
+                        <td>4%</td>
+                        <td>Below</td>
+                        <td>South Africa</td>
+                        <td class="bg-success text-white">Repost 5% holdiny</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Canadian Silves Inc.</th>
+                        <td>60</td>
+                        <td>480</td>
+                        <td>12.5%</td>
+                        <td>Above</td>
+                        <td>Canada</td>
+                        <td class="bg-warning  text-white">Monthly Disclosure die in 1 week</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Argentinian metals Co</th>
+                        <td>51</td>
+                        <td>1000</td>
+                        <td>5.1%</td>
+                        <td>Above</td>
+                        <td>Argentina</td>
+                        <td class="bg-danger text-white">Argentine 5% Share Disclosure die </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Chilean Platinum LLL</th>
+                        <td>489</td>
+                        <td>900</td>
+                        <td>54.3%</td>
+                        <td>Above</td>
+                        <td>Chile</td>
+                        <td class="bg-warning text-white">Chilean Majorlly Shareholdes Disclosure one in 3 days</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header pt-3 ">
+                <div class="card-title">
+                    <span class="position-relative pe-4">
+                        <i class="fa-solid fa-envelope"></i> Inbox
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            99+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    <input class="form-check-input d-none d-md-block" type="checkbox" value="">
+                    <p class="w-100 text-truncate mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nemo est, a minus, culpa harum nostrum quam voluptatem ducimus aperiam praesentium. Repudiandae unde debitis dolore suscipit tempore est nam eaque?</p>
+                    <span class="text-muted white-space-nowrap">
+                        <i class="fa-solid fa-paperclip"></i>
+                        Today, 3:47 - 9/03/2023
+                    </span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    <input class="form-check-input d-none d-md-block" type="checkbox" value="">
+                    <p class="w-100 text-truncate mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nemo est, a minus, culpa harum nostrum quam voluptatem ducimus aperiam praesentium. Repudiandae unde debitis dolore suscipit tempore est nam eaque?</p>
+                    <span class="text-muted white-space-nowrap">
+                        <i class="fa-solid fa-paperclip"></i>
+                        Today, 3:47 - 9/03/2023
+                    </span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    <input class="form-check-input d-none d-md-block" type="checkbox" value="">
+                    <p class="w-100 text-truncate mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nemo est, a minus, culpa harum nostrum quam voluptatem ducimus aperiam praesentium. Repudiandae unde debitis dolore suscipit tempore est nam eaque?</p>
+                    <span class="text-muted white-space-nowrap">
+                        <i class="fa-solid fa-paperclip"></i>
+                        Today, 3:47 - 9/03/2023
+                    </span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    <input class="form-check-input d-none d-md-block" type="checkbox" value="">
+                    <p class="w-100 text-truncate mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nemo est, a minus, culpa harum nostrum quam voluptatem ducimus aperiam praesentium. Repudiandae unde debitis dolore suscipit tempore est nam eaque?</p>
+                    <span class="text-muted white-space-nowrap">
+                        <i class="fa-solid fa-paperclip"></i>
+                        Today, 3:47 - 9/03/2023
+                    </span>
+                </li>
+                <li class="list-group-item d-flex align-items-center gap-3">
+                    <i class="fa-solid fa-ellipsis-vertical"></i> 
+                    <input class="form-check-input d-none d-md-block" type="checkbox" value="">
+                    <p class="w-100 text-truncate mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nemo est, a minus, culpa harum nostrum quam voluptatem ducimus aperiam praesentium. Repudiandae unde debitis dolore suscipit tempore est nam eaque?</p>
+                    <span class="text-muted white-space-nowrap">
+                        <i class="fa-solid fa-paperclip"></i>
+                        Today, 3:47 - 9/03/2023
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.2.0/dist/js/coreui.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.3/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable();
+        });
+    </script>
+</body>
+</html>
